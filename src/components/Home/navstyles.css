@@ -1,0 +1,19 @@
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+  }
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #fff;
+    bottom: -4px;
+    right: 0;
+    width: 0%;
+    transition: 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+  }
+  .nav-link:hover:before {
+    left: 0;
+    width: 100%;
+  }
